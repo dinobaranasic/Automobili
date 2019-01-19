@@ -15,26 +15,30 @@ namespace Automobili
              * za razne primjene gdje je potreban popis automobila
              */
 
-            Auto d1 = new DizelskiAuto();
-            d1.Marka = "Audi";
-            d1.Model = "A7";
-            d1.Gorivo = "Dizel";
+            Auto a1 = new Auto();
+            a1.PostaviMarku("BMW");
+            a1.PostaviModela("5");
+            a1.PostaviGorivo("Benzin");
+           //ispisivanje pomocu napravljene metode za ispis
+            a1.IspisiMarkaModelGorivo();
 
-            Auto b1 = new BenzinskiAuto();
-            b1.Marka = "BMW";
-            b1.Model = "5";
-            b1.Gorivo = "Benzin";
+            Auto a2 = new Auto();
+            a2.PostaviMarku("Audi");
+            a2.PostaviModela("A7");
+            a2.PostaviGorivo("Dizel");
+            a2.IspisiMarkaModelGorivo();
 
-            Auto e1 = new ElektricniAuto();
-            e1.Marka = "Rimac";
-            e1.Model = "Concept One";
-            e1.Gorivo = "Elektricni";
+            Auto a3 = new Auto();
+            a3.PostaviMarku("Rimac");
+            a3.PostaviModela("Concept One");
+            a3.PostaviGorivo("Elektricni");
+            a3.IspisiMarkaModelGorivo();
 
             List<Auto> auti = new List<Auto>();
-
-            auti.Add(d1);
-            auti.Add(b1);
-            auti.Add(e1);
+            auti.Add(a1);
+            auti.Add(a2);
+            auti.Add(a3);
+           
 
         }
     }

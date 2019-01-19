@@ -38,6 +38,23 @@ namespace Automobili
              * tj. posla koji on mora odraditi? 
              * Kolika je skalabilnost? 
              */
+
+            /*
+             * Što nije dobro?
+             * We Enjoy Typing? Write Everytinh Twice? Waste Everyone's Time? WET! 
+             * We have a WET solution.
+             * DRY -> Don't Repeat Yourself (The Pragmatic Programmer)
+             */
+
+            string[] marka = { "BMW", "Audi", "VW" };
+            string[] model = { "5", "A7", "Arteon" };
+
+            Console.WriteLine("Popis osoba:");
+            for (int i = 0; i < marka.Length; i++)
+            {
+                Console.WriteLine("{0}. {1}, {2}", i, marka[i], model[i]);
+            }
+
         }
     }
 }

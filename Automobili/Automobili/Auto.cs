@@ -14,6 +14,43 @@ namespace Automobili
         private string Gorivo;
         private bool provjera = true; //primjer podatak koji nema/netreba javne get/set metode
 
+        //Svojstvo Marka
+        public string marka
+        {
+            get
+            {
+                return Marka;
+            }
+
+            set
+            {
+                Marka = value;
+            }
+        }
+
+        //Svojstvo marka moze pisati i na nacin:
+        //public string marka { get => Marka; set => Marka = value; }
+
+        //Stvojstvo Model
+        //public string model
+        //{
+        //    get
+        //    {
+        //        return Model;
+        //    }
+
+        //    set
+        //    {
+        //        Model = value;
+        //    }
+        //}
+
+        //Svojstvo model moze pisati i na nacin:
+        public string model { get => Model; set => Model = value; }
+
+        //Svojstvo Gorivo
+        public string gorivo { get => Gorivo; set => Gorivo = value; }
+
         //Metoda za postavljanje podataka "Marka"
         public void PostaviMarku(string Marka)
         {

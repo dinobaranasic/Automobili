@@ -28,10 +28,11 @@ namespace Automobili
             a2.PostaviGorivo("Dizel");
             a2.IspisiMarkaModelGorivo();
 
+            //Korištenje svojstva za dodjelu vrijednosti
             Auto a3 = new Auto();
-            a3.PostaviMarku("Rimac");
-            a3.PostaviModela("Concept One");
-            a3.PostaviGorivo("Elektricni");
+            a3.marka="Rimac";
+            a3.model = "Concept One";
+            a3.gorivo = "Elektricni";
             a3.IspisiMarkaModelGorivo();
 
             List<Auto> auti = new List<Auto>();

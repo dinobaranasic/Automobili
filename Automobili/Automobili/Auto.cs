@@ -14,6 +14,26 @@ namespace Automobili
         private string Gorivo;
         private bool provjera = true; //primjer podatak koji nema/netreba javne get/set metode
 
+        // Izraditi razred tako da ...
+        // Sadrži konstruktor kojim se postavljaju podaci, 
+        // onemogućiti stvaranje objekta bez podataka.
+        /*
+        public Auto()
+        {
+            // Onemogućavanje stvaranja objekta bez podataka -->
+            // izostaviti podrazumijevani konstruktor iz koda 
+            //  i izraditi drugi(e) konstruktore
+        }
+        */
+
+        //Konstruktor koji prima 3 parametra(Marka, Model, Gorivo)
+        public Auto(string Marka, string Model, string Gorivo)
+        {
+            this.Marka = Marka;
+            this.Model = Model;
+            this.Gorivo = Gorivo;
+        }
+
         //Svojstvo Marka
         public string marka
         {

@@ -9,10 +9,9 @@ namespace Automobili
     class Auto
     {
         //Sakrivanje podataka, onemogucavanje pristupa
-        private string Marka;
-        private string Model;
-        private string Gorivo;
-        private bool provjera = true; //primjer podatak koji nema/netreba javne get/set metode
+        protected string Marka;
+        protected string Model;
+        protected string Gorivo;
 
         // Izraditi razred tako da ...
         // Sadrži konstruktor kojim se postavljaju podaci, 
@@ -102,9 +101,9 @@ namespace Automobili
         }
 
         //Metoda za dohvat podataka "Gorivo"
-        public string DohvatiGorivo()
+        public virtual string DohvatiGorivo()
         {
-            return Gorivo;
+            return "Gorivo" + Gorivo;
         }
 
         //Metoda za ispis podataka "Marka, Model, Gorivo"

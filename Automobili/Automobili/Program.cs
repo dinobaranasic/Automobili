@@ -55,7 +55,7 @@ namespace Automobili
             b1.marka = "VW";
             b1.model = "Golf R";
             b1.gorivo = "Benzin";
-            b1.cijenapunogrezervarabenzina = 550;
+            b1.CijenaPunogRezervaraBenzina = 550;
 
             DizelskiAuto d1 = new DizelskiAuto();
             b1.marka = "Porsche";
@@ -71,6 +71,8 @@ namespace Automobili
             DizelskiAuto d2 = new DizelskiAuto("VW", "Arteon", "Dizel");
             ElektricniAuto e2 = new ElektricniAuto("Rimac", "Concept Two", "Elektricni");
 
+            Console.WriteLine("Ispiši automobil: ");
+            Console.WriteLine(b2.DohvatiGorivo());
 
 
 

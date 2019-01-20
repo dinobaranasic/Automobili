@@ -8,9 +8,8 @@ namespace Automobili
 {
     class BenzinskiAuto : Auto
     {
-        public int CijenaPunogRezervaraBenzina;
         //Svojstvo CijenaPunogRezervaraBenzina
-        public int cijenapunogrezervarabenzina { get => CijenaPunogRezervaraBenzina; set => CijenaPunogRezervaraBenzina = value; }
+        public int CijenaPunogRezervaraBenzina { get; set; }
 
         public BenzinskiAuto() : base("", "", "")
         {
@@ -29,6 +28,11 @@ namespace Automobili
         public BenzinskiAuto(string Marka, string Model, string Gorivo, int CijenaPunogRezervaraBenzina) : base(Marka, Model, Gorivo)
         {
             this.CijenaPunogRezervaraBenzina = CijenaPunogRezervaraBenzina;
+        }
+
+        public override string DohvatiGorivo()
+        {
+            return "Gorivo: " + Gorivo + " CijenaPunogRezervaraBenzina: " + CijenaPunogRezervaraBenzina.ToString();
         }
 
 

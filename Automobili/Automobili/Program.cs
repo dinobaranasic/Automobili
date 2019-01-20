@@ -50,7 +50,29 @@ namespace Automobili
             auti.Add(a1);
             auti.Add(a2);
             auti.Add(a3);
-           
+
+            BenzinskiAuto b1 = new BenzinskiAuto();
+            b1.marka = "VW";
+            b1.model = "Golf R";
+            b1.gorivo = "Benzin";
+            b1.cijenapunogrezervarabenzina = 550;
+
+            DizelskiAuto d1 = new DizelskiAuto();
+            b1.marka = "Porsche";
+            b1.model = "Panamera";
+            b1.gorivo = "Dizel";
+
+            ElektricniAuto e1 = new ElektricniAuto();
+            e1.marka = "Tesla";
+            e1.model = "Model S";
+            e1.gorivo = "Elektricni";
+
+            BenzinskiAuto b2 = new BenzinskiAuto("Ferrari", "812 superfast", "Benzin", 600);
+            DizelskiAuto d2 = new DizelskiAuto("VW", "Arteon", "Dizel");
+            ElektricniAuto e2 = new ElektricniAuto("Rimac", "Concept Two", "Elektricni");
+
+
+
 
         }
     }
